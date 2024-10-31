@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 1</title>
     <script>
+        //solicita al usuario que ingrese una calificacion
         let calificacion = parseFloat(prompt("Ingrese una calificacion entre o y 100"));
+
+        //Verificar que la calificacion este en el rango valido
         if(calificacion >= 0 && calificacion <= 100){
-            alert("Aprobo con honores");
-        
+            //Evaluar la calificacion y mostrar el mensaje correspondiente       
             if( calificacion >=90){
                 alert("Aprobado con honores");
-            }
-            else if( calificacion >=70){
+            }else if( calificacion >=70){
                 alert("Aprobado");
-            }
-            else {
+            } else {
                 alert("Reprobado");
             }
         }else {

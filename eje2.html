@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 2</title>
     <script>
-        let numero = parseFloat(prompt("Ingrese un numero"));
+        //Solicitar al usuario que ingrese un numero
+        let numero = parseFloat(prompt("Ingrese un numero: "));
+
+        //Verificar si el numero es divisible por 2
         if (numero % 2 === 0){
-            alert("El numero es par");
-        
-        }
-        else {
+            alert("El numero es par"); 
+        } else {
             alert("El numero es impar");
         }
 

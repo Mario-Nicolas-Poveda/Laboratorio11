@@ -5,14 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 3</title>
     <script>
-        let TotalCompra = parseFloat(prompt("Ingrese el monto total de su compra"));
-        if(TotalCompra > 100 ){
-            TotalCompra = TotalCompra* 0.9;
-            alert("Tiene un 10% de descuento totala a pagar: "+TotalCompra);
-        }
-        else( TotalCompra <= 100)
-        {
-                alert("No se aplica descuento total a pagar: ");
+        //Solicitar al usuario que ingrese el monto total de su compra
+        let montoTotal = parseFloat(prompt("Ingrese el monto total de su compra: "));
+
+        //Verificar si el monto es mayor a 100
+        if(montoTotal > 100 ){
+            //Aplicar un descuento del 10%
+            let descuento = montoTotal * 0.10;
+            let montoFinal = montoTotal - descuento;
+            alert(`Aplicaste un descuento del 10%. Monto final a pagar: $${montoFinal.toFixed(2)}`);
+        }else{
+            //No aplica descuento
+                alert(`No aplica descuento. Monto total a pagar: $${montoTotal.toFixed(2)}`);
             }
     </script>
 </head>
